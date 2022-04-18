@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Brain Genius</title>
+</head>
+<body>
+    <header><h1>Brain Genius</h1></header>
+    <main>
+        <div class="menu">
+            <button class="button" onclick="play(1)">1 Jogador</button>
+            <button class="button" onclick="play(2)">2 Jogadores</button>
+            <button class="button" onclick="play(3)">3 Jogadores</button>
+            <button class="button" onclick="play(4)">4 Jogaores</button>
+        </div>
+        <div class="main-game">
+            <div class="genius">
+                <div class="blue selected" onclick="clicked(0)"></div>
+                <div class="yellow selected" onclick="clicked(1)"></div>
+                <div class="red selected" onclick="clicked(2)"></div>
+                <div class="green selected" onclick="clicked(3)"></div>
+            </div>
+            <div class="placar"></div>
+        </div>
+    </main>
+    <footer><h2>João Vitor</h2></footer>
+</body>
+<script src="./script.js"></script>
+</html>

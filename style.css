@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+header, footer{
+    background-color: rgb(76, 0, 255);
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 25px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 10px;height: 75vh;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+
+    border-radius: 5px;
+    background-color: rgb(76, 0, 255);
+}
+
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button:hover{
+    background-color: aqua;
+}
+
+.main-game{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'blue yellow'
+                         'red gren';
+    padding: 13px;
+    gap: 10px;
+    border-radius: 50%;
+    background-color: black;
+    height: 350px;
+    width: 350px;
+}
+
+.blue{
+    background-color: rgb(0, 0, 255);
+    border-radius: 5px;
+    border-top-left-radius: 100%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.yellow{
+    background-color: rgb(255, 255, 0);
+    border-radius: 5px;
+    border-top-right-radius: 100%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.red{
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.green{
+    background-color: rgb(0, 128, 0);
+    border-radius: 5px;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.selected{
+    opacity: .3;
+}
+
+.placar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    padding: 20px;
+}
